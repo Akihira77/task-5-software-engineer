@@ -1,0 +1,314 @@
+2023-04-26T07:35:55.6960900+07:00  [INF] Now listening on: "https://localhost:7148" (d826f4b8)
+2023-04-26T07:35:55.6983080+07:00  [INF] Now listening on: "http://localhost:5214" (d826f4b8)
+2023-04-26T07:35:55.7028537+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-26T07:35:55.7037807+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-04-26T07:35:55.7038217+07:00  [INF] Content root path: "F:\File_Mahasiswa\Programming\dotnet\CustomerApi\CustomerApi\" (b5d60022)
+2023-04-26T07:36:04.0438401+07:00 0HMQ5TOPAJFFP:0000000B [INF] Executed DbCommand ("42"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c" (0723d8ff)
+2023-04-26T07:36:16.2441063+07:00 0HMQ5TOPAJFFP:0000000D [INF] API Activity Wednesday, April 26, 2023 7:36 AM - Get All Data From https://jsonplaceholder.typicode.com/todos - 200 (8418922f)
+2023-04-26T07:39:43.2544974+07:00 0HMQ5TOPAJFFR:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:40:14.1739198+07:00 0HMQ5TOPAJFFR:0000000F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:40:20.5521950+07:00 0HMQ5TOPAJFFR:00000017 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:40:31.6308323+07:00 0HMQ5TOPAJFFR:00000021 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:40:39.6545322+07:00  [INF] Now listening on: "https://localhost:7148" (d826f4b8)
+2023-04-26T07:40:39.6566347+07:00  [INF] Now listening on: "http://localhost:5214" (d826f4b8)
+2023-04-26T07:40:39.6605104+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-26T07:40:39.6610201+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-04-26T07:40:39.6610545+07:00  [INF] Content root path: "F:\File_Mahasiswa\Programming\dotnet\CustomerApi\CustomerApi\" (b5d60022)
+2023-04-26T07:40:47.7024299+07:00 0HMQ5TRDVADFN:00000009 [INF] API Activity Wednesday, April 26, 2023 7:40 AM - Get All Data From https://jsonplaceholder.typicode.com/todos - 200 (a0fafcd1)
+2023-04-26T07:50:39.3216377+07:00 0HMQ5TRDVADFR:00000007 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:51:39.2862151+07:00 0HMQ5TRDVADFR:0000000F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:53:05.3222559+07:00 0HMQ5TRDVADFR:00000017 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:53:08.9372693+07:00 0HMQ5TRDVADFR:0000001F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Customer/get-customer/{id}" for actions - CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi),CustomerApi.Controllers.CustomerController.GetCustomerById (CustomerApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T07:53:17.9862752+07:00  [INF] Now listening on: "https://localhost:7148" (d826f4b8)
+2023-04-26T07:53:17.9886750+07:00  [INF] Now listening on: "http://localhost:5214" (d826f4b8)
+2023-04-26T07:53:17.9929630+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-26T07:53:17.9935844+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-04-26T07:53:17.9936116+07:00  [INF] Content root path: "F:\File_Mahasiswa\Programming\dotnet\CustomerApi\CustomerApi\" (b5d60022)
+2023-04-26T07:59:08.3392443+07:00 0HMQ5U2FVAUE8:00000015 [INF] Executed DbCommand ("59"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c" (0723d8ff)
+2023-04-26T07:59:13.9888877+07:00 0HMQ5U2FVAUE8:00000017 [INF] Executed DbCommand ("11"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T07:59:14.0012071+07:00 0HMQ5U2FVAUE8:00000017 [ERR] API Activity Wednesday, April 26, 2023 7:59 AM - GetCustomerById Controller - Customer '2' does not exists (77d5d0f0)
+2023-04-26T07:59:28.7730233+07:00 0HMQ5U2FVAUE8:00000019 [INF] Executed DbCommand ("20"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Customers\" (\"Id\", \"Email\", \"FirstName\", \"HomeAddress\", \"LastName\")
+VALUES (@p0, @p1, @p2, @p3, @p4);" (0723d8ff)
+2023-04-26T07:59:38.3167567+07:00 0HMQ5U2FVAUE8:0000001B [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c" (0723d8ff)
+2023-04-26T07:59:49.6281845+07:00 0HMQ5U2FVAUE8:0000001D [INF] Executed DbCommand ("11"ms) [Parameters=["@p0='?', @p1='?', @p2='?', @p3='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Customers\" (\"Email\", \"FirstName\", \"HomeAddress\", \"LastName\")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING \"Id\";" (0723d8ff)
+2023-04-26T07:59:52.8760053+07:00 0HMQ5U2FVAUE8:0000001F [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c" (0723d8ff)
+2023-04-26T08:00:07.9358125+07:00 0HMQ5U2FVAUE8:00000021 [ERR] Failed executing DbCommand ("25"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?', @p2='?', @p3='?', @p4='?'"], CommandType='Text', CommandTimeout='30']"
+""INSERT INTO \"Customers\" (\"Id\", \"Email\", \"FirstName\", \"HomeAddress\", \"LastName\")
+VALUES (@p0, @p1, @p2, @p3, @p4);" (627a98df)
+2023-04-26T08:00:07.9822954+07:00 0HMQ5U2FVAUE8:00000021 [ERR] An exception occurred in the database while saving changes for context type '"CustomerApi.DataContext.AppDbContext"'."
+""Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint \"PK_Customers\"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|233_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint \"PK_Customers\"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Customers
+    ConstraintName: PK_Customers
+    File: nbtinsert.c
+    Line: 671
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)" (170f029e)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_Customers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.<ReadMessage>g__ReadMessageLong|233_0(NpgsqlConnector connector, Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior behavior, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_Customers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: Customers
+    ConstraintName: PK_Customers
+    File: nbtinsert.c
+    Line: 671
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CustomerApi.Repositories.CustomerRepos.CustomerRepository.Save()
+   at CustomerApi.Controllers.CustomerController.AddCustomer(Customer customer)
+2023-04-26T08:00:07.9838330+07:00 0HMQ5U2FVAUE8:00000021 [ERR] API Activity Wednesday, April 26, 2023 8:00 AM - Add Controller -Error: An error occurred while saving the entity changes. See the inner exception for details. (1bec1166)
+2023-04-26T08:01:22.1965405+07:00 0HMQ5U2FVAUE8:0000002B [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:01:22.1975760+07:00 0HMQ5U2FVAUE8:0000002B [ERR] API Activity Wednesday, April 26, 2023 8:01 AM - Update Controller - Get Customer By Id - Customer '0' does not exists (123faabf)
+2023-04-26T08:01:56.7886614+07:00 0HMQ5U2FVAUE8:0000002D [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:01:56.8120421+07:00 0HMQ5U2FVAUE8:0000002D [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CustomerApi.Controllers.CustomerController.DeleteCustomer(Int32 id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T08:02:59.9385459+07:00 0HMQ5U2FVAUE8:0000002F [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:02:59.9411933+07:00 0HMQ5U2FVAUE8:0000002F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CustomerApi.Controllers.CustomerController.DeleteCustomer(Int32 id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T08:03:04.9669148+07:00 0HMQ5U2FVAUE8:00000031 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:03:04.9973164+07:00 0HMQ5U2FVAUE8:00000031 [INF] Executed DbCommand ("13"ms) [Parameters=["@p0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""DELETE FROM \"Customers\"
+WHERE \"Id\" = @p0;" (0723d8ff)
+2023-04-26T08:03:07.2744945+07:00 0HMQ5U2FVAUE8:00000033 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:03:07.2768536+07:00 0HMQ5U2FVAUE8:00000033 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CustomerApi.Controllers.CustomerController.DeleteCustomer(Int32 id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T08:03:41.7536766+07:00 0HMQ5U2FVAUE8:00000035 [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:03:41.7553086+07:00 0HMQ5U2FVAUE8:00000035 [ERR] API Activity Wednesday, April 26, 2023 8:03 AM - GetCustomerById Controller - Customer '4' does not exists (aee6b83b)
+2023-04-26T08:04:07.2535409+07:00 0HMQ5U2FVAUE8:0000003F [INF] Executed DbCommand ("1"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:04:07.2572669+07:00 0HMQ5U2FVAUE8:0000003F [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CustomerApi.Controllers.CustomerController.DeleteCustomer(Int32 id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T08:04:18.5671372+07:00  [INF] Now listening on: "https://localhost:7148" (d826f4b8)
+2023-04-26T08:04:18.5694238+07:00  [INF] Now listening on: "http://localhost:5214" (d826f4b8)
+2023-04-26T08:04:18.5733541+07:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2023-04-26T08:04:18.5739510+07:00  [INF] Hosting environment: "Development" (c3307c92)
+2023-04-26T08:04:18.5739799+07:00  [INF] Content root path: "F:\File_Mahasiswa\Programming\dotnet\CustomerApi\CustomerApi\" (b5d60022)
+2023-04-26T08:04:25.4761475+07:00 0HMQ5U8KQTSHD:00000009 [INF] Executed DbCommand ("45"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:04:25.5404618+07:00 0HMQ5U8KQTSHD:00000009 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at CustomerApi.Controllers.CustomerController.DeleteCustomer(Int32 id) in F:\File_Mahasiswa\Programming\dotnet\CustomerApi\CustomerApi\Controllers\CustomerController.cs:line 127
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-04-26T08:05:25.1878041+07:00 0HMQ5U8KQTSHD:00000013 [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT c.\"Id\", c.\"Email\", c.\"FirstName\", c.\"HomeAddress\", c.\"LastName\"
+FROM \"Customers\" AS c
+WHERE c.\"Id\" = @__id_0
+LIMIT 1" (0723d8ff)
+2023-04-26T08:05:25.1904555+07:00 0HMQ5U8KQTSHD:00000013 [ERR] API Activity Wednesday, April 26, 2023 8:05 AM - Delete Controller - Get Customer By Id - Customer '4' does not exists (e98ae7d6)
+2023-04-26T08:05:44.9015049+07:00  [INF] Application is shutting down... (90f52c38)
