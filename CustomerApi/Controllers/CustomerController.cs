@@ -1,7 +1,6 @@
 ﻿using CustomerApi.Models;
 using CustomerApi.Repositories.CustomerRepos;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace CustomerApi.Controllers;
 [Route("api/[controller]")]
@@ -38,7 +37,7 @@ public class CustomerController : ControllerBase
 
 		if(customer == null)
 		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - GetCustomerById Controller - Customer '{id}' does not exists");
+			_logger.LogError($"Customer Controller - Customer id '{id}' does not exists");
 			return NotFound();
 		}
 		return Ok(customer);
@@ -49,27 +48,15 @@ public class CustomerController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status400BadRequest)]
 	public async Task<IActionResult> AddCustomer(Customer customer)
 	{
-		if(!ModelState.IsValid)
-		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Add Controller - Adding Customer Error: {ModelState}");
-			return BadRequest(ModelState);
-		}
-
-		await _customerRepository.Add(customer);
 
 		try
 		{
+			await _customerRepository.Add(customer);
 			await _customerRepository.Save();
 			return NoContent();
-		} catch(DbUpdateException ex)
-		{
-			foreach(var entry in ex.Entries)
-			{
-				_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Add Controller -Error: {ex.Message}", entry);
-			}
 		} catch(Exception ex)
 		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Add Controller - Error: {ex.Message}");
+			_logger.LogError($"Customer Controller - Add - Error: {ex.Message}");
 		}
 
 		return BadRequest();
@@ -81,16 +68,10 @@ public class CustomerController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status204NoContent)]
 	public async Task<IActionResult> UpdateCustomer(Customer customer)
 	{
-		if(!ModelState.IsValid)
-		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Update Controller - Updating Customer Error: {ModelState}");
-			return BadRequest(ModelState);
-		}
-
 		var customerDb = await _customerRepository.GetCustomerById(customer.Id, true);
 		if(customerDb == null)
 		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Update Controller - Get Customer By Id - Customer '{customer.Id}' does not exists");
+			_logger.LogError($"Customer Controller - Customer id '{customer.Id}' does not exists");
 			return NotFound(customer);
 		}
 
@@ -100,15 +81,9 @@ public class CustomerController : ControllerBase
 		{
 			await _customerRepository.Save();
 			return NoContent();
-		} catch(DbUpdateException ex)
-		{
-			foreach(var entry in ex.Entries)
-			{
-				_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Update Controller -Error: {ex.Message}", entry);
-			}
 		} catch(Exception ex)
 		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Update Controller -Error: {ex.Message}");
+			_logger.LogError($"Customer Controller - Update - Error: {ex.Message}");
 		}
 
 		return BadRequest();
@@ -124,7 +99,7 @@ public class CustomerController : ControllerBase
 
 		if(customer == null)
 		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Delete Controller - Get Customer By Id - Customer '{id}' does not exists");
+			_logger.LogError($"Customer Controller - Customer id '{id}' does not exists");
 			return NotFound();
 		}
 
@@ -134,15 +109,9 @@ public class CustomerController : ControllerBase
 		{
 			await _customerRepository.Save();
 			return NoContent();
-		} catch(DbUpdateException ex)
-		{
-			foreach(var entry in ex.Entries)
-			{
-				_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Delete Controller -Error: {ex.Message}", entry);
-			}
 		} catch(Exception ex)
 		{
-			_logger.LogError($"API Activity {DateTime.Now.ToString("f")} - Delete Controller -Error: {ex.Message}");
+			_logger.LogError($"Customer Controller - Delete - Error: {ex.Message}");
 		}
 
 		return BadRequest();

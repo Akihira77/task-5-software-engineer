@@ -1,19 +1,19 @@
 ﻿using CustomerApi.Models;
+using CustomerApi.Services;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
-using System.Collections.ObjectModel;
 
 namespace CustomerApi.Controllers;
 [Route("api/[controller]")]
 [ApiController]
 public class TodoController : ControllerBase
 {
-	private readonly string baseUrl = "https://jsonplaceholder.typicode.com/todos";
 	private readonly ILogger<TodoController> _logger;
+	private readonly TodoApiService _todoApiService;
 
-	public TodoController(ILogger<TodoController> logger)
+	public TodoController(ILogger<TodoController> logger, TodoApiService todoApiService)
 	{
 		_logger = logger;
+		_todoApiService = todoApiService;
 	}
 
 	[HttpGet("get-todos")]
@@ -24,46 +24,15 @@ public class TodoController : ControllerBase
 	{
 		try
 		{
-			// Kita gunakan HttpClient untuk dapat mengakses sebuah URL
-			using HttpClient http = new HttpClient();
-
-			// Kita mengambil data dari API dengan menggunakan method GET
-			// HttpResponseMessage akan mengembalikan StatusCode dan Data
-			using HttpResponseMessage res = await http.GetAsync(baseUrl);
-
-			if(!res.IsSuccessStatusCode)
+			var todos = await _todoApiService.GetTodosAsync();
+			if(todos == null)
 			{
-				return BadRequest(res);
-			}
-
-			// Kita ambil data dari HttpResponseMessage
-			using HttpContent content = res.Content;
-
-			// Membacanya dalam bentuk string
-			var data = await content.ReadAsStringAsync();
-			// Jika data yang kita ambil dari API kosong/null
-			if(data == null)
-			{
-				_logger.LogInformation($"API Activity {DateTime.Now.ToString("f")} - Get Data From {baseUrl} - return null");
-				return Ok(data);
+				_logger.LogInformation($"Todo Controller - Get All - return null");
+				return NotFound(todos);
 			} else
 			{
-
-				// parsing data and output to Todo List/Collections
-				var dataArr = JArray.Parse(data);
-				var todoList = new Collection<Todo>();
-				foreach(JObject obj in dataArr.Children<JObject>())
-				{
-					todoList.Add(new Todo
-					{
-						Id = Convert.ToInt32(obj["id"]),
-						UserId = Convert.ToInt32(obj["userId"]),
-						Title = obj["title"].ToString(),
-						Completed = Convert.ToBoolean(obj["completed"])
-					});
-				}
-				_logger.LogInformation($"API Activity {DateTime.Now.ToString("f")} - Get All Data From {baseUrl} - {todoList.Count}");
-				return Ok(todoList);
+				_logger.LogInformation($"Todo Controller - Get All - return {todos.Count()} data");
+				return Ok(todos);
 			}
 		} catch(Exception ex)
 		{
@@ -78,46 +47,16 @@ public class TodoController : ControllerBase
 	[ProducesResponseType(StatusCodes.Status400BadRequest)]
 	public ActionResult<Todo> GetTodoById(int id)
 	{
-		string url = baseUrl + $"/{id}";
 		try
 		{
-			// Kita gunakan HttpClient untuk dapat mengakses sebuah URL
-			using HttpClient http = new HttpClient();
-
-			// Kita mengambil data dari API dengan menggunakan method GET
-			// HttpResponseMessage akan mengembalikan StatusCode dan Data
-			using HttpResponseMessage res = http.GetAsync(baseUrl).GetAwaiter().GetResult();
-
-			if (!res.IsSuccessStatusCode)
+			var todo = _todoApiService.GetTodo(id);
+			if(todo == null)
 			{
-				return BadRequest(res);
-			}
-
-			// Kita ambil data dari HttpResponseMessage
-			using HttpContent content = res.Content;
-
-			// Membacanya dalam bentuk string
-			var data = content.ReadAsStringAsync().GetAwaiter().GetResult();
-
-			// Jika data yang kita ambil dari API kosong/null
-			if(data == null)
-			{
-				_logger.LogInformation($"API Activity {DateTime.Now.ToString("f")} - Get Data From {url} - return null");
-				return Ok(data);
+				_logger.LogInformation($"Todo Controller - Get by Id - return null");
+				return NotFound(todo);
 			} else
 			{
-				//Parse data into a object.
-				var dataObj = JObject.Parse(data);
-
-				Todo todo = new Todo
-				{
-					Id = Convert.ToInt32(dataObj["id"]),
-					UserId = Convert.ToInt32(dataObj["userId"]),
-					Title = dataObj["title"].ToString(),
-					Completed = Convert.ToBoolean(dataObj["completed"])
-				};
-
-				_logger.LogInformation($"API Activity {DateTime.Now.ToString("f")} - Get Data From {url} - Title '{todo.Title}'");
+				_logger.LogInformation($"Todo Controller - Get by Id - return {todo.Title}");
 				return Ok(todo);
 			}
 		} catch(Exception ex)
